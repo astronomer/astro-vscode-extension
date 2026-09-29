@@ -1,0 +1,106 @@
+name: Bug report
+description: Something in the extension is not working as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. For problems with your Astronomer account or a Deployment rather
+        than the extension, contact [Astronomer support](https://www.astronomer.io/docs/astro/astro-support).
+        To report a security vulnerability, email oss_security@astronomer.io instead of opening an issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Deployments view
+        2. Expand a Deployment
+        3. …
+    validations:
+      required: true
+
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Extensions view → Astro, or `code --list-extensions --show-versions`.
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      options:
+        - VS Code
+        - Cursor
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: editor-version
+    attributes:
+      label: Editor version
+      description: Help → About.
+      placeholder: "1.105.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows
+    validations:
+      required: true
+
+  - type: input
+    id: astro-version
+    attributes:
+      label: Astro CLI version
+      description: The output of `astro version`.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the extension?
+      options:
+        - Otto chat
+        - Deployments view
+        - Local view
+        - Docs view
+        - Profile / sign-in
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Astro output channel
+      description: |
+        View → Output, then pick **Astro** from the dropdown. Paste the part around the problem.
+        Check it first for anything you would rather not share publicly, such as file paths or project names.
+      render: text
+
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: Screenshots, or anything that might help.

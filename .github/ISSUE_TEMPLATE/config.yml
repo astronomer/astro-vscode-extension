@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Astronomer support
+    url: https://www.astronomer.io/docs/astro/astro-support
+    about: Problems with your Astronomer account, a Deployment, or anything that is not the extension itself.
+  - name: Report a security vulnerability
+    url: https://www.astronomer.io/security/
+    about: Email oss_security@astronomer.io rather than opening a public issue.

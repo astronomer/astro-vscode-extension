@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest something the extension should do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or problem, rather than the solution. What gets in your way today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you would like the extension to handle it, if you have an idea.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the extension?
+      options:
+        - Otto chat
+        - Deployments view
+        - Local view
+        - Docs view
+        - Profile / sign-in
+        - Something new
+    validations:
+      required: true
