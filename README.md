@@ -8,8 +8,8 @@ This repository holds no source code. It is where to report a problem or ask for
 
 ## Install
 
-Install **Astro** by Astronomer from the
-[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Astronomer.astro-vscode), or from the
+Install **Astro for VS Code** by Astronomer from the
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Astronomer.astronomer-vscode), or from the
 Extensions view in VS Code.
 
 You need an Astronomer account and the [Astro CLI](https://www.astronomer.io/docs/astro/cli/overview/). Sign in
